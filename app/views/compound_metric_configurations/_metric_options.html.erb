@@ -5,7 +5,7 @@
       </div>
       <div class="help-container">
         <p>
-          A custom name for your compound metric.
+        <%= t('body1_compound_metric_options') %>
         </p>
       </div>
     </div>
@@ -16,8 +16,8 @@
         <%= f.text_field :description, class: 'text-field form-control', value: (metric.description unless metric.nil?)  %>
       </div>
       <div class="help-container">
-        <p>
-          A short description of your compound metric.
+        <p>  
+          <%= t('body2_compound_metric_options') %>
         </p>
       </div>
     </div>
@@ -28,8 +28,7 @@
         <%= f.text_area :script, class: 'text-area form-control', value: (metric.script unless metric.nil?)  %>
       </div>
       <div class="help-container">
-        <p>
-          A mathematical expression (in javascript) to calculate your compound metric. It needs a return statement. The codes of already created metrics can be used inside the script.
+        <p>  <%= t('body3_compound_metric_options') %>
         </p>
       </div>
     </div>
