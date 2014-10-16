@@ -39,6 +39,7 @@ en:
   reading_group: "Reading Group"
   project: "Project"
   configuration: "Configuration"
+  configurations: "Configurations"
   edit_account: "Edit Account"
   module: "Module"
   weight: "Weight:"
@@ -48,6 +49,7 @@ en:
   language: "Language:"
   new_projects: "New Project"
   no_description: "There is no description available."
+
 
   #this pattern is type_folder_file  
 
@@ -105,3 +107,6 @@ en:
   stay_logged: "Stay logged in."
   resend_unclok_instructions: "Resend unlock instructions"
   grade: "'s grade."
+  edit_configuration: "Edit Configuration"
+  must_logged_configuration: "You must be logged in to create new Configurations."
+  new_configuration: "New Configuration"
