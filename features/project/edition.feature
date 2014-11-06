@@ -9,7 +9,7 @@ Feature: Project
     And I am signed in
     And I own a sample project
     And I am at the All Projects page
-    When I click the Edit link
+    When I click the edit link
     Then I should be in the Edit Project page
 
   @kalibro_processor_restart
@@ -18,7 +18,7 @@ Feature: Project
     And I am signed in
     And I have a sample project
     And I am at the All Projects page
-    Then I should not see "Edit" within "table tr td"
+    Then I should not see "edit" within "table tr td"
 
   @kalibro_processor_restart
   Scenario: Should not render the edit page if the project doesn't belongs to the current user
@@ -27,7 +27,7 @@ Feature: Project
     And I have a sample project
     And I am at the All Projects page
     When I visit the sample project edit page
-    Then I should see "You're not allowed to do this operation"
+    Then I should see "not_allowed_operation"
 
   @kalibro_processor_restart
   Scenario: Filling up the form
@@ -35,7 +35,7 @@ Feature: Project
     And I am signed in
     And I own a sample project
     And I am at the All Projects page
-    When I click the Edit link
+    When I click the edit link
     Then The field "project[name]" should be filled with the sample project "name"
     And The field "project[description]" should be filled with the sample project "description"
 
@@ -47,9 +47,9 @@ Feature: Project
     And I am at the sample project edit page
     And I fill the Name field with "Kalibro"
     And I fill the Description field with "Web Service to collect metrics"
-    When I press the Save button
-    Then I should see "Kalibro"
-    And I should see "Web Service to collect metrics"
+    When I press the buttom_save button
+    Then I should see "kalibro"
+    And I should see "web_service_collect_metrics"
 
   @kalibro_processor_restart
   Scenario: With project name already taken
@@ -59,8 +59,8 @@ Feature: Project
     And I own a project named "Kalibro"
     And I am at the sample project edit page
     And I fill the Name field with "Qt-Calculator"
-    When I press the Save button
-    Then I should see "Name There is already a Project with name Qt-Calculator!"
+    When I press the buttom_save button
+    Then I should see "name_project_exist"
 
   @kalibro_processor_restart
   Scenario: Editing just the description
@@ -69,8 +69,8 @@ Feature: Project
     And I own a sample project
     And I am at the sample project edit page
     And I fill the Description field with "Web Service to collect metrics"
-    When I press the Save button
-    And I should see "Web Service to collect metrics"
+    When I press the buttom_save button
+    And I should see "web_service_collect_metrics"
 
   @kalibro_processor_restart
   Scenario: With blank project name
@@ -79,5 +79,5 @@ Feature: Project
     And I own a sample project
     And I am at the sample project edit page
     And I fill the Name field with " "
-    When I press the Save button
-    Then I should see "Name can't be blank"
+    When I press the buttom_save button
+    Then I should see "name_blank"

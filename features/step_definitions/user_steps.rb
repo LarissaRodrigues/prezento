@@ -1,9 +1,9 @@
 When(/^I click the (.+) link$/) do |text|
-  click_link text
+  click_link I18n.t(text)
 end
 
 When(/^I press the (.+) button$/) do |text|
-  click_button text
+  click_button I18n.t(text)
 end
 
 When(/^I fill the (.+) field with "(.+)"$/) do |field, text|

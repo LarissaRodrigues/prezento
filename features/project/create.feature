@@ -14,9 +14,9 @@ Feature: Project Creation
     And I am at the New Project page
     And I fill the Name field with "Kalibro"
     And I fill the Description field with "Web Service to collect metrics"
-    When I press the Save button
-    Then I should see "Kalibro"
-    And I should see "Web Service to collect metrics"
+    When I press the buttom_save button
+    Then I should see "kalibro"
+    And I should see "web_service_collect_metrics"
 
   @kalibro_processor_restart
   Scenario: project creation with already taken name
@@ -26,8 +26,8 @@ Feature: Project Creation
     And I am at the New Project page
     And I fill the Name field with "Kalibro"
     And I fill the Description field with "Web Service to collect metrics"
-    When I press the Save button
-    Then I should see "Name There is already a Project with name Kalibro!"
+    When I press the buttom_save button
+    Then I should see "already_project_with_Kalibro"
 
   Scenario: project creation with blank name
     Given I am a regular user
@@ -35,13 +35,13 @@ Feature: Project Creation
     And I am at the New Project page
     And I fill the Name field with " "
     And I fill the Description field with "Web Service to collect metrics"
-    When I press the Save button
-    Then I should see "Name can't be blank"
+    When I press the buttom_save button
+    Then I should see "name_blank"
 
   Scenario: click on button new project on my projects page
     Given I am a regular user
     And I am signed in
     And I am at the homepage
-    And I click the Your projects link
-    When I click the New Project link
-    Then I should see "New Project"
+    And I click the your_projects link
+    When I click the new_project link
+    Then I should see "new_project"

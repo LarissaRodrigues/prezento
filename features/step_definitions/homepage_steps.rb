@@ -11,5 +11,5 @@ Given(/^I am a regular user$/) do
 end
 
 Then(/^I should see "(.+)"$/) do |text|
-  expect(page).to have_content(text)
+  expect(page).to have_content(I18n.t(text))
 end

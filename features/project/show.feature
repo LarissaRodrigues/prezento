@@ -20,14 +20,14 @@ Scenario: Should show the create repository link the project owner
   And I am signed in
   And I own a sample project
   When I am at the Sample Project page
-  Then I should see "New Repository"
+  Then I should see "new_repository"
 
 
 @kalibro_processor_restart
 Scenario: Considering the project has no repositories
   Given I have a sample project
   When I am at the Sample Project page
-  Then I should see "There are no Repositories yet!"
+  Then I should see "no_repositories"
 
 @kalibro_restart @kalibro_processor_restart
 Scenario: Considering the project has repositories
@@ -35,7 +35,7 @@ Scenario: Considering the project has repositories
   And I have a sample configuration with native metrics
   And I have a sample repository within the sample project
   When I am at the Sample Project page
-  Then I should not see There are no Repositories yet!
+  Then I should not see "no_repositories"
 
 @kalibro_processor_restart
 Scenario: Checking project contents

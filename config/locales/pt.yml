@@ -314,3 +314,17 @@ pt:
   create_new_reading: "Criar nova leitura"
   process_period: "Período de processo"
   instant_loading_page: "Espere um instante enquanto estamos carregando a página que você solicitou."
+  no_repositories: "Não existem repositórios ainda!"
+  kalibro: "Kalibro"
+  web_service_collect_metrics: "Web Service to collect metrics"
+  already_project_with_Kalibro: "Name There is already a Project with name Kalibro!"
+  activemodel:
+    errors:
+      models:
+        project:
+          attributes:
+            name:
+              blank: "Nome não pode ser nulo"
+  name_blank: "Nome não pode ser nulo"
+  not_allowed_operation: "Você não tem permissão para realizar essa operação"
+  name_project_exist: "Name There is already a Project with name Qt-Calculator!"

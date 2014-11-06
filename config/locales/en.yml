@@ -316,3 +316,16 @@ en:
   currently_waiting_confirmation: "Currently waiting confirmation for:"
   leavel_blank_want_change: "(leave it blank if you do not want to change it)"
   instant_loading_page: "Wait an instant while we are loading the page that you have requested."
+  no_repositories: "There are no Repositories yet!"
+  kalibro: "Kalibro"
+  web_service_collect_metrics: "Web Service to collect metrics"
+  already_project_with_Kalibro: "Name There is already a Project with name Kalibro!"
+  activemodel:
+    errors:
+      models:
+        project:
+          attributes:
+            name:
+              blank: "Name can't be blank"
+  name_blank: "Name can't be blank"
+  not_allowed_operation: "You're not allowed to do this operation"
