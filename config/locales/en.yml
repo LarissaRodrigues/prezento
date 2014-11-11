@@ -91,6 +91,7 @@ en:
   analysis: "Analysis"
   configuring: "Configuring"
   tutorials: "Tutorials"
+  bad: "Bad"
 
   #this pattern is type_folder_file  
 
@@ -164,8 +165,8 @@ en:
   new_range: "New Range"
   only_point_printed_chart: "There is only one point and it will not be printed into a chart."
   edit_project: "Edit Project"
-  must_logged_create_projetcs: "You must be logged in to create new Projects."
-  there_readings_yet: "There are no Readings yet!"
+  must_logged_create_projects: "You must be logged in to create new Projects."
+  there_no_readings_yet: "There are no Readings yet!"
   edit_reading_group: "Edit Reading Group"
   must_logged_create_reading_groups: "You must be logged in to create new Reading Groups."
   new_reading_group: "New Reading Group"
@@ -323,9 +324,12 @@ en:
   activemodel:
     errors:
       models:
+        reading:
+          attributes:
+            grade:
+              not_a_number: "Grade is not a number"
         project:
           attributes:
             name:
               blank: "Name can't be blank"
-  name_blank: "Name can't be blank"
   not_allowed_operation: "You're not allowed to do this operation"

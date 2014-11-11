@@ -36,7 +36,7 @@ Feature: Project Creation
     And I fill the Name field with " "
     And I fill the Description field with "Web Service to collect metrics"
     When I press the buttom_save button
-    Then I should see "name_blank"
+    Then I should see "activemodel.errors.models.project.attributes.name.blank"
 
   Scenario: click on button new project on my projects page
     Given I am a regular user

@@ -80,4 +80,4 @@ Feature: Project
     And I am at the sample project edit page
     And I fill the Name field with " "
     When I press the buttom_save button
-    Then I should see "name_blank"
+    Then I should see "activemodel.errors.models.project.attributes.name.blank"

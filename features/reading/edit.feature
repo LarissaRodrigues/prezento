@@ -14,8 +14,8 @@ Feature: Reading Edit
     And the field "Grade" should be filled with "10.5"
     And the field "Color" should be filled with "33dd33"
     When I fill the Label field with "Bad"
-    And I press the Save button
-    Then I should see "Bad"
+    And I press the save button
+    Then I should see "bad"
 
   @kalibro_restart
   Scenario: editing a reading with blank fields
@@ -27,7 +27,7 @@ Feature: Reading Edit
     When I fill the Label field with " "
     And I fill the Grade field with " "
     And I fill the Color field with " "
-    And I press the Save button
+    And I press the save button
     Then I should see "Label can't be blank"
     And I should see "Grade can't be blank"
     And I should see "Color can't be blank"
@@ -41,8 +41,8 @@ Feature: Reading Edit
     And I have a sample reading within the sample reading group labeled "Good"
     And I am at the Edit Reading page
     When I fill the Label field with "Average"
-    And I press the Save button
-    Then I should see "Label There is already a Reading with label Average! Please, choose another one."
+    And I press the save button
+    Then I should see "kalibro_error_message"
 
   @kalibro_restart
   Scenario: editing a reading with non numerical value
@@ -54,5 +54,5 @@ Feature: Reading Edit
     When I fill the Label field with "macaco"
     And I fill the Grade field with "z"
     And I fill the Color field with "FFFFFF"
-    And I press the Save button
-    Then I should see "Grade is not a number"
+    And I press the save button
+    Then I should see "activemodel.errors.models.reading.attributes.grade.not_a_number"

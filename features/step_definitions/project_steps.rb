@@ -53,7 +53,7 @@ Then(/^the sample project should be there$/) do
 end
 
 Then(/^I should be in the All Projects page$/) do
-  expect(page).to have_content("Projects")
+  expect(page).to have_content(I18n.t("projects"))
 end
 
 Then(/^I should be in the Edit Project page$/) do

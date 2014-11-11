@@ -91,6 +91,7 @@ pt:
   update: "Atualizar"
   configuring: "Configurando"
   tutorials: "Tutoriais"
+  bad: "Bad"
 
   #this pattern is type_folder_file  
 
@@ -164,8 +165,8 @@ pt:
   new_range: "Novo intervalo"
   only_point_printed_chart: "Há apenas um ponto e não vai ser impresso em um gráfico."
   edit_project: "Edite o Projeto"
-  must_logged_create_projetcs: "Você precisa estar logado para criar novos projetos."
-  there_readings_yet: "Ainda não existem leituras!"
+  must_logged_create_projects: "Você precisa estar logado para criar novos projetos."
+  there_no_readings_yet: "Ainda não existem leituras!"
   edit_reading_group: "Edite Grupos de Leitura"
   must_logged_create_reading_groups: "Você precisa estar logado para criar novos grupos de leitura."
   new_reading_group: "Novo Grupo de Leitura"
@@ -318,13 +319,19 @@ pt:
   kalibro: "Kalibro"
   web_service_collect_metrics: "Web Service to collect metrics"
   already_project_with_Kalibro: "Name There is already a Project with name Kalibro!"
+  kalibro_error_message: "Já existe uma %{record} com o %{attribute} %{value}! Por favor, escolha outro!"
   activemodel:
     errors:
       models:
+        reading:
+          attributes:
+            label:
+              blank: "Label não pode ser nulo"
+            grade:
+              not_a_number: "O grau não é um número"
         project:
           attributes:
             name:
               blank: "Nome não pode ser nulo"
-  name_blank: "Nome não pode ser nulo"
   not_allowed_operation: "Você não tem permissão para realizar essa operação"
   name_project_exist: "Name There is already a Project with name Qt-Calculator!"
