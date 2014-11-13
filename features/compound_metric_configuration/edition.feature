@@ -26,9 +26,9 @@ Feature: Compound Metric Configuration edition
     When I click the edit link of the Coumpound Metric
     And I fill the Script field with "Another javascript"
     And I fill the Code field with "Another_code"
-    And I press the Save button
-    Then I should see "Another_code"
-    And I should see "Compound Metric Configuration was successfully updated."
+    And I press the save button
+    Then I should see "another_code"
+    And I should see "compound_metric_configurations_successfully"
 
   @kalibro_restart
   Scenario: trying to edit with blank fields
@@ -43,9 +43,9 @@ Feature: Compound Metric Configuration edition
     And I fill the Script field with " "
     And I fill the Code field with " "
     And I fill the Weight field with " "
-    And I press the Save button
-    Then I should see "Edit Compound Metric Configuration"
-    And I should see "Name can't be blank"
+    And I press the save button
+    Then I should see "title_compound_edit"
+    And I should see "name_blank"
     And I should see "Script can't be blank"
     And I should see "Code can't be blank"
     And I should see "Weight can't be blank"
@@ -62,6 +62,6 @@ Feature: Compound Metric Configuration edition
     And I have another compound metric configuration with code "Another_Code" within the given mezuro configuration
     When I visit the sample compound metric configuration edit page
     And I fill the Code field with "Another_Code"
-    And I press the Save button
+    And I press the save button
     Then I should see "Code There is already a MetricConfiguration with code Another_Code! Please, choose another one."
 

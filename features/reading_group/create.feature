@@ -15,7 +15,7 @@ Scenario: Reading Group creation
   And I am at the New Reading Group page
   And I fill the Name field with "My reading group"
   And I fill the Description field with "New reading group"
-  When I press the Save button
+  When I press the save button
   Then I should see "My reading group"
   And I should see "New reading group"
   And I should see "New Reading"
@@ -29,7 +29,7 @@ Scenario: reading group creation with already taken name
   And I am at the New Reading Group page
   And I fill the Name field with "Group"
   And I fill the Description field with "Same Group"
-  When I press the Save button
+  When I press the save button
   Then I should see "Name There is already a ReadingGroup with name Group!"
 
 @kalibro_restart
@@ -39,5 +39,5 @@ Scenario: reading group creation with blank name
   And I am at the New Reading Group page
   And I fill the Name field with " "
   And I fill the Description field with "Anything"
-  When I press the Save button
+  When I press the save button
   Then I should see "Name can't be blank"

@@ -1,4 +1,4 @@
-Feature: Configuration listing
+Feature: Configuration listingno_metric_configurations
   In order to interact with metric configurations
   As a regular user
   I should see the metric configurations of a given configuration
@@ -7,10 +7,10 @@ Feature: Configuration listing
   Scenario: When there are no metric configurations
     Given I have a sample configuration
     When I am at the Sample Configuration page
-    Then I should see "Metric Name"
-    And I should see "Code"
-    And I should see "Weight"
-    And I should see "There are no Metric Configurations yet!"
+    Then I should see "metric_name_metric_configuration_new"
+    And I should see "code"
+    And I should see "weight"
+    And I should see "no_metric_configurations"
 
   @kalibro_restart
   Scenario: When there are metric configurations
@@ -26,7 +26,7 @@ Feature: Configuration listing
     And I am signed in
     And I own a sample configuration
     When I am at the Sample Configuration page
-    Then I should see "Add Metric"
+    Then I should see "add_metric"
 
   @kalibro_restart
   Scenario: I should not see the add metric link when I am at a given configuration page

@@ -21,7 +21,7 @@ Feature: Metric Configuration edition
     And I have a sample reading group
     And I have a sample metric configuration within the given mezuro configuration
     And I am at the Sample Configuration page
-    When I click the Edit link
+    When I click the edit link
     And I fill the Weight field with "3.0"
     And I press the Save button
     Then I should see "3.0"
@@ -35,7 +35,7 @@ Feature: Metric Configuration edition
     And I have a sample metric configuration within the given mezuro configuration
     When I visit the sample metric configuration edit page
     And I fill the Weight field with " "
-    And I press the Save button
+    And I press the save button
     Then I should see "Weight can't be blank"
 
   @kalibro_restart

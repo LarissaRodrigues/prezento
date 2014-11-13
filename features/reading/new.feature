@@ -25,7 +25,7 @@ Feature: New reading
     And I fill the Label field with "My Reading"
     And I fill the Grade field with "1"
     And I fill the Color field with "00000ff00"
-    When I press the Save button
+    When I press the save button
     Then I should be in the Sample Reading Group page
 
   @kalibro_restart @javascript
@@ -47,7 +47,7 @@ Feature: New reading
     And I fill the Grade field with "1"
     When I press the Pick color button
     And I click on the center of the color picker
-    And I press the Save button
+    And I press the save button
     Then I should be in the Sample Reading Group page
 
   @kalibro_restart
@@ -60,7 +60,7 @@ Feature: New reading
     And I fill the Label field with "My Reading"
     And I fill the Grade field with "1"
     And I fill the Color field with "00000ff00"
-    When I press the Save button
+    When I press the save button
     Then I should see "1 error prohibited this Reading from being saved"
     And I should be at the New Reading page
 
@@ -73,7 +73,7 @@ Feature: New reading
     And I fill the Label field with "My Reading"
     And I fill the Grade field with "z"
     And I fill the Color field with "00000ff00"
-    When I press the Save button
+    When I press the save button
     Then I should see "Grade is not a number"
     And I should be at the New Reading page
 
@@ -86,6 +86,6 @@ Feature: New reading
     And I fill the Label field with "My Reading"
     And I fill the Grade field with "1"
     And I fill the Color field with "z"
-    When I press the Save button
+    When I press the save button
     Then I should see "1 error prohibited this Reading from being saved"
     And I should be at the New Reading page

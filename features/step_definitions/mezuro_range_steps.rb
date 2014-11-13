@@ -26,7 +26,7 @@ When(/^I am at the New Range page$/) do
 end
 
 Then(/^I should be at the New Range page$/) do
-  expect(page).to have_content("New Range")
+  expect(page).to have_content I18n.t("new_range")
   expect(page).to have_content("Beginning")
   expect(page).to have_content("End")
   expect(page).to have_content("Comments")

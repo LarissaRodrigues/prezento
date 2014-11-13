@@ -15,8 +15,8 @@ Feature: Configuration Creation
     And I am at the New Configuration page
     And I fill the Name field with "Kalibro"
     And I fill the Description field with "Web Service to collect metrics"
-    When I press the Save button
-    Then I should see "Kalibro"
+    When I press the save button
+    Then I should see "kalibro"
     And I should see "Web Service to collect metrics"
 
   @kalibro_restart
@@ -27,7 +27,7 @@ Feature: Configuration Creation
     And I am at the New Configuration page
     And I fill the Name field with "Kalibro"
     And I fill the Description field with "Web Service to collect metrics"
-    When I press the Save button
+    When I press the save button
     Then I should see "Name There is already a MezuroConfiguration with name Kalibro!"
 
   @kalibro_restart
@@ -37,5 +37,5 @@ Feature: Configuration Creation
     And I am at the New Configuration page
     And I fill the Name field with " "
     And I fill the Description field with "Web Service to collect metrics"
-    When I press the Save button
+    When I press the save button
     Then I should see "Name can't be blank"

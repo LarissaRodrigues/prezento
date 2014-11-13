@@ -91,7 +91,7 @@ When(/^I click on the sample child's name$/) do
 end
 
 When(/^I click the "(.*?)" h3$/) do |text|
-  page.find('h3', text: text).click()
+  page.find('h3', text: I18n.t(text)).click()
 end
 
 When(/^I wait up for the ajax request$/) do

@@ -5,11 +5,11 @@ Feature: Configuration listing
 
   Scenario: Listing configurations
     Given I am at the homepage
-    When I click the Configuration link
-    Then I should see "Configurations"
-    And I should see "Name"
-    And I should see "Description"
-    And I should see "You must be logged in to create new Configurations."
+    When I click the configuration link
+    Then I should see "configurations"
+    And I should see "name"
+    And I should see "description"
+    And I should see "must_logged_configuration"
 
   @kalibro_restart
   Scenario: Should list the existing configurations
@@ -26,5 +26,5 @@ Feature: Configuration listing
     And I am signed in
     And I have a sample configuration
     And I am at the All Configurations page
-    When I click the Show link
+    When I click the show link
     Then the sample configuration should be there

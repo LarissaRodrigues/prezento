@@ -18,8 +18,8 @@ Feature: Mezuro Range Edit
     And the field "End" should be filled with "5.1"
     And the field "Comments" should be filled with "Comment"    
     When I fill the Beginning field with "2.2"
-    And I press the Save button
-    Then I should see "2.2"
+    And I press the save button
+    Then I should see "two_point_two"
 
   @kalibro_restart
   Scenario: editing a mezuro range with blank fields
@@ -32,5 +32,5 @@ Feature: Mezuro Range Edit
     And I have a sample range within the sample metric configuration with beginning "1"
     And I am at the Edit Mezuro Range page
     When I fill the Beginning field with " "
-    And I press the Save button
+    And I press the save button
     Then I should see "Beginning can't be blank"

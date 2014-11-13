@@ -9,7 +9,7 @@ Feature: Reading Group
     And I am signed in
     And I have a sample reading group
     And I am at the All Reading Groups page
-    When I click the Edit link
+    When I click the edit link
     Then I should be in the Edit Reading Group page
 
   @kalibro_restart
@@ -35,7 +35,7 @@ Feature: Reading Group
     And I am signed in
     And I own a sample reading group
     And I am at the All Reading Groups page
-    When I click the Edit link
+    When I click the edit link
     Then The field "reading_group[name]" should be filled with the sample reading group "name"
     And The field "reading_group[description]" should be filled with the sample reading group "description"
 
@@ -47,7 +47,7 @@ Feature: Reading Group
     And I am at the sample reading group edit page
     And I fill the Name field with "My Reading Group"
     And I fill the Description field with "New Reading Group"
-    When I press the Save button
+    When I press the save button
     Then I should see "My Reading Group"
     And I should see "New Reading Group"
 
@@ -59,7 +59,7 @@ Feature: Reading Group
     And I own a reading group named "My reading"
     And I am at the sample reading group edit page
     And I fill the Name field with "A Reading"
-    When I press the Save button
+    When I press the save button
     Then I should see "Name There is already a ReadingGroup with name A Reading!"
 
   @kalibro_restart
@@ -69,7 +69,7 @@ Feature: Reading Group
     And I own a sample reading group
     And I am at the sample reading group edit page
     And I fill the Description field with "New Reading Group"
-    When I press the Save button
+    When I press the save button
     Then I should see "New Reading Group"
 
   @kalibro_restart
@@ -79,5 +79,5 @@ Feature: Reading Group
     And I own a sample reading group
     And I am at the sample reading group edit page
     And I fill the Name field with " "
-    When I press the Save button
+    When I press the save button
     Then I should see "Name can't be blank"

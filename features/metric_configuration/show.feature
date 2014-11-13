@@ -11,7 +11,7 @@ Feature: Show Metric Configuration
     And I have a sample metric configuration within the given mezuro configuration
     And I have a sample range within the sample metric configuration
     When I am at the Sample Configuration page
-    And I click the Show link
+    And I click the show link
     Then I should be at metric configuration sample page
     And I should see the sample range
 

@@ -23,7 +23,7 @@ end
 Then(/^I am at the sample metric configuration page$/) do
   visit mezuro_configuration_metric_configuration_path(@metric_configuration.configuration_id, @metric_configuration.id)
   expect(page).to have_content(@metric_configuration.metric.name)
-  expect(page).to have_content("Ranges")
+  expect(page).to have_content I18n.t("ranges")
 end
 
 Then(/^I should see the sample metric configuration content$/) do

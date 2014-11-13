@@ -16,7 +16,7 @@ Feature: Metric Configuration Creation
     And I own a sample configuration
     And I have a reading group named "Scholar"
     And I am at the Sample Configuration page
-    And I click the Add Metric link
+    And I click the add_metric link
     And I click the "Analizo" h3
     And I click the Total Lines of Code link
     And I fill the Weight field with "2"
@@ -33,7 +33,7 @@ Feature: Metric Configuration Creation
     And I own a sample configuration
     And I have a reading group named "Scholar"
     And I am at the Sample Configuration page
-    And I click the Add Metric link
+    And I click the add_metric link
     And I click the "Analizo" h3
     And I click the Total Lines of Code link
     When I click the Back link

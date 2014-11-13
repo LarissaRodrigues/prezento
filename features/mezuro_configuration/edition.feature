@@ -9,7 +9,7 @@ Feature: Configuration
     And I am signed in
     And I own a sample configuration
     And I am at the All Configurations page
-    When I click the Edit link
+    When I click the edit link
     Then I should be in the Edit Configuration page
 
   @kalibro_restart
@@ -18,7 +18,7 @@ Feature: Configuration
     And I am signed in
     And I have a sample configuration
     And I am at the All Configurations page
-    Then I should not see "Edit" within "table tr td"
+    Then I should not see "edit" within "table tr td"
 
   @kalibro_restart
   Scenario: Should not render the edit page if the configuration doesn't belongs to the current user
@@ -27,7 +27,7 @@ Feature: Configuration
     And I have a sample configuration
     And I am at the All Projects page
     When I visit the sample configuration edit page
-    Then I should see "You're not allowed to do this operation"
+    Then I should see "not_allowed_operation"
 
   @kalibro_restart
   Scenario: Filling up the form
@@ -35,7 +35,7 @@ Feature: Configuration
     And I am signed in
     And I own a sample configuration
     And I am at the All Configurations page
-    When I click the Edit link
+    When I click the edit link
     Then The field "mezuro_configuration[name]" should be filled with the sample configuration "name"
     And The field "mezuro_configuration[description]" should be filled with the sample configuration "description"
 
@@ -47,9 +47,9 @@ Feature: Configuration
     And I am at the sample configuration edit page
     And I fill the Name field with "Kalibro"
     And I fill the Description field with "Web Service to collect metrics"
-    When I press the Save button
-    Then I should see "Kalibro"
-    And I should see "Web Service to collect metrics"
+    When I press the save button
+    Then I should see "kalibro"
+    And I should see "web_service_collect_metrics"
 
   @kalibro_restart
   Scenario: With configuration name already taken
@@ -59,7 +59,7 @@ Feature: Configuration
     And I own a configuration named "Kalibro"
     And I am at the sample configuration edit page
     And I fill the Name field with "Qt-Calculator"
-    When I press the Save button
+    When I press the save button
     Then I should see "Name There is already a MezuroConfiguration with name Qt-Calculator!"
 
   @kalibro_restart
@@ -69,8 +69,8 @@ Feature: Configuration
     And I own a sample configuration
     And I am at the sample configuration edit page
     And I fill the Description field with "Web Service to collect metrics"
-    When I press the Save button
-    And I should see "Web Service to collect metrics"
+    When I press the save button
+    And I should see "web_service_collect_metrics"
 
   @kalibro_restart
   Scenario: With blank configuration name
@@ -79,5 +79,5 @@ Feature: Configuration
     And I own a sample configuration
     And I am at the sample configuration edit page
     And I fill the Name field with " "
-    When I press the Save button
+    When I press the save button
     Then I should see "Name can't be blank"

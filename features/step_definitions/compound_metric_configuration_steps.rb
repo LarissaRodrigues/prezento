@@ -28,5 +28,5 @@ end
 
 Then(/^I should be at compound metric configuration sample page$/) do
   expect(page).to have_content(@compound_metric_configuration.metric.name)
-  expect(page).to have_content("Ranges")
+  expect(page).to have_content(I18n.t("ranges"))
 end

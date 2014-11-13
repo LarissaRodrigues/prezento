@@ -45,7 +45,7 @@ Then(/^The field "(.*?)" should be filled with the sample configuration "(.*?)"$
 end
 
 Then(/^I should be in the All configurations page$/) do
-  expect(page).to have_content("Configurations")
+  expect(page).to have_content I18n.t("configurations")
 end
 
 Then(/^the sample configuration should not be there$/) do

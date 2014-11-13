@@ -11,6 +11,6 @@ Feature: Show Compound Metric Configuration
     And I have a sample compound metric configuration within the given mezuro configuration
     And I have a sample range within the sample compound metric configuration
     When I am at the Sample Configuration page
-    And I click the Show link
+    And I click the show link
     Then I should be at compound metric configuration sample page
     And I should see the sample range

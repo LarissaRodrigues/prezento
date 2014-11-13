@@ -335,3 +335,8 @@ pt:
               blank: "Nome não pode ser nulo"
   not_allowed_operation: "Você não tem permissão para realizar essa operação"
   name_project_exist: "Name There is already a Project with name Qt-Calculator!"
+  compound_metric: "Compound Metric"
+  another_code: "Another_code"
+  compound_metric_configurations_successfully: "Compound Metric Configuration was successfully updated."
+  two_point_two: "2.2"
+  new_reading: "New Reading"
