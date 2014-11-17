@@ -7,7 +7,7 @@ When(/^I press the (.+) button$/) do |text|
 end
 
 When(/^I fill the (.+) field with "(.+)"$/) do |field, text|
-  fill_in field, :with => text
+  fill_in field, :with => I18n.t(text, default: text)
 end
 
 Then(/^my name should have changed to (.+)$/) do |text|

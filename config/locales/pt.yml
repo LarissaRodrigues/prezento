@@ -92,6 +92,9 @@ pt:
   configuring: "Configurando"
   tutorials: "Tutoriais"
   bad: "Bad"
+  my_compound_metric: "Minha métrica composta"
+  some_description: "Alguma descrição"
+  mcm: "mcm"
 
   #this pattern is type_folder_file  
 
@@ -323,6 +326,17 @@ pt:
   activemodel:
     errors:
       models:
+        metric_configuration:
+          attributes:
+            code:
+              blank: "Codigo não pode ser nulo"
+            weight:
+              not_a_number: "Peso não é o número"
+              blank: "Peso não pode ser nulo"
+            name:
+              blank: "Nome não pode ser nulo"
+            script:
+              blank: "Script não pode ser nulo"
         reading:
           attributes:
             label:

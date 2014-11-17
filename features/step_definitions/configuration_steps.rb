@@ -7,15 +7,15 @@ Given(/^I am at the New Configuration page$/) do
 end
 
 Given(/^I have a configuration named "(.*?)"$/) do |name|
-  @mezuro_configuration = FactoryGirl.create(:mezuro_configuration, {id: nil, name: name})
+  @mezuro_configuration = FactoryGirl.create(:mezuro_configuration, {name: name})
 end
 
 Given(/^I have a sample configuration$/) do
-  @mezuro_configuration = FactoryGirl.create(:mezuro_configuration, {id: nil})
+  @mezuro_configuration = FactoryGirl.create(:mezuro_configuration)
 end
 
 Given(/^I own a sample configuration$/) do
-  @mezuro_configuration = FactoryGirl.create(:mezuro_configuration, {id: nil})
+  @mezuro_configuration = FactoryGirl.create(:mezuro_configuration)
   FactoryGirl.create(:mezuro_configuration_ownership, {id: nil, user_id: @user.id, mezuro_configuration_id: @mezuro_configuration.id})
 end
 

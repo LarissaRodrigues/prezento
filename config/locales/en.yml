@@ -92,6 +92,9 @@ en:
   configuring: "Configuring"
   tutorials: "Tutorials"
   bad: "Bad"
+  my_compound_metric: "My Compound Metric"
+  some_description: "Some description"
+  mcm: "mcm"
 
   #this pattern is type_folder_file  
 

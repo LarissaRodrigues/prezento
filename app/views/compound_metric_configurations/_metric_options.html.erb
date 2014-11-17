@@ -36,7 +36,7 @@
 
     <div class="form-row">
       <div class="field-container">
-        <%= f.label :scope, 'Scope', class: 'control-label' %>
+        <%= f.label :scope, t('scope'), class: 'control-label' %>
         <%= f.select( :scope, scope_options, {class: 'form-control', selected: (metric.scope unless metric.nil?)} ) %>
       </div>
       <div class="help-container">

@@ -16,16 +16,17 @@ Feature: Compound Metric Configuration Creation
     When I click the "created_metrics" h3
     Then I see the sample metric configuration name
     And I see the sample metric configuration code
-    When I fill the Name field with "My Compound Metric"
-    And I fill the Description field with "Some description"
+    When I fill the Name field with "my_compound_metric"
+    And I fill the Description field with "some_description"
     And I fill the Code field with "mcm"
     And I fill the Script field with "8*8;"
     And I fill the Weight field with "8"
-    And I set the select field "Scope" as "Class"
+    And I set the select field "scope" as "Class"
     And I set the select field "reading_group" as "Scholar"
     And I press the save button
-    When I click the show link of "My Compound Metric"
-    Then I should see "My Compound Metric"
+    Then I should see "my_compound_metric"
+    When I click the show link of "my_compound_metric"
+    Then I should see "my_compound_metric"
     And I should see "mcm"
     And I should see "8"
     And I should see "AVERAGE"
